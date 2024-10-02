@@ -1,0 +1,57 @@
+h1 {
+    color: brown
+}
+
+body {
+    background-image: url('https://i.ytimg.com/vi/wyNdlt0vcEI/maxresdefault_live.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border: 1cap solid rgb(215, 99, 3);
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+.grid-container img {
+    margin: 10px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.text-image-block {
+    display: flex;
+    align-items: flex-start;
+    margin: 100px 0;
+}
+
+.text-image-block img {
+    max-width: 350px;
+    margin-right: 39px;
+    border-radius: 50px;
+}
+
+.text-image-block p {
+    flex: 1;
+    font-size: 19px;
+    line-height: 1.5;
+}
+button{
+    cursor: pointer;
+    background-color: #f3851e;
+    color: #080808;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+button:active {
+    background-color: #f45d05;
+}
+button:hover {
+    background-color: #b3700c;
