@@ -1,3 +1,7 @@
+.h0 {
+    height: 60px;
+    background-color: hsl(0, 4%, 16%);
+}
 h1 {
     color: brown
 }
@@ -9,7 +13,9 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+.red {
+    position: center;
+}
 .grid-container {
     display: flex;
     display: grid;
@@ -18,8 +24,9 @@ body {
     border: 1cap solid rgb(215, 99, 3);
     border-radius: 5px;
     margin: 10px;
-    
+
 }
+
 .grid-container img {
     margin: 10px;
     border-top-left-radius: 14px;
@@ -43,15 +50,60 @@ body {
     font-size: 19px;
     line-height: 1.5;
 }
-button{
+
+button {
     cursor: pointer;
     background-color: #f3851e;
     color: #080808;
     padding: 10px 30px;
     border-radius: 10px;
 }
+
 button:active {
     background-color: #f45d05;
 }
+
 button:hover {
-    background-color: #b3700c;
+    background-color: #ff4400;
+}
+.h7 {
+    margin-top: -45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #f20000;
+}
+
+/* Стили для компьютеров (ширина экрана более 768px) */
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* Стили для мобильных устройств (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
